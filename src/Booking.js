@@ -11,30 +11,35 @@ class Booking {
         spots: 400,
         available: rndBetween(1, 400),
         direction: -1,
+        img: "svartheim.png",
       },
       {
         area: "Nilfheim",
         spots: 300,
         available: rndBetween(1, 300),
         direction: -1,
+        img: "nilfheim.png",
       },
       {
         area: "Helheim",
         spots: 100,
         available: rndBetween(1, 100),
         direction: -1,
+        img: "helheim.png",
       },
       {
         area: "Muspelheim",
         spots: 200,
         available: rndBetween(1, 200),
         direction: -1,
+        img: "muspelheim.png",
       },
       {
         area: "Alfheim",
         spots: 250,
         available: rndBetween(1, 250),
         direction: -1,
+        img: "alfheim.png",
       },
     ];
     //sell out random area
@@ -49,6 +54,7 @@ class Booking {
       area: oneArea.area,
       spots: oneArea.spots,
       available: oneArea.available,
+      img: oneArea.img,
     }));
   }
   reserveSpot(area, amount) {
